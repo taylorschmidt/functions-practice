@@ -1,4 +1,4 @@
-# Problem Solving Lab 1
+# Problem Solving with Functions
 
 <hr>
 Creator: Thom Page<br>
@@ -12,6 +12,7 @@ Remember:
 
 * one step at a time (test thoroughly each step)
 * researching a step is excellent (although time-consuming)
+
 
 # 1
 ## Calculate the Cube
