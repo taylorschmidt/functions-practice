@@ -68,7 +68,7 @@ console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 ---
 
-# Problem Solving w/ funcitons part 2
+# Problem Solving w/ functions part 2
 
 <hr>
 Creator: Thom Page<br>
