@@ -6,6 +6,13 @@ Topics: Problem solving with functions<br>
 History: This lesson was taken from [SEIR-MAE](https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-MAE-INSTRUCTORS/blob/master/unit_1/w02d3/student_labs/morning_lab.md)
 <hr>
 
+## Instructions
+
+* Do the following in a `repl.it` or environment of your choice.
+* Fork and clone this respository
+* Add a file to this project that contains both *your name* and *your point person's name* (`taylor-bruno.js`)
+* Make a pull request and make the title or your PR *also* contain both your own and your point-instructor's name, like the `js` file.
+
 ## Problem solving
 
 Remember:
@@ -61,7 +68,7 @@ console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 ---
 
-# Problem Solving w/ funcitons part 2
+# Problem Solving w/ functions part 2
 
 <hr>
 Creator: Thom Page<br>
