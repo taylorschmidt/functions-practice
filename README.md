@@ -11,7 +11,7 @@ History: This lesson was taken from [SEIR-MAE](https://git.generalassemb.ly/Soft
 * Do the following in a `repl.it` or environment of your choice.
 * Fork and clone this respository
 * Add a file to this project that contains both *your name* and *your point person's name* (`taylor-bruno.js`)
-* Make a pull request and make the title or your PR *also* contain both your own and your point-instructor's name, like the `js` file.
+* Make a pull request and make the title of your PR *also* contain both your own and your point-instructor's name, like the `js` file.
 
 ## Problem solving
 
