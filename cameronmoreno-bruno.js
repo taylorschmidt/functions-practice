@@ -84,3 +84,24 @@ const euler = (num) => {
 euler();
 
 //5 - A Needle in the HayStack
+const findNeedle = (arr) => {
+  for(let word in arr) {
+    if (arr[word] === 'needle') {
+      console.log('found the needle at position', word);
+    }
+  }
+}
+
+findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']);
+
+//6 - Sum the positive
+const sumOfPositives = (arr) => {
+  let sum = 0;
+  for (let word in arr) {
+    if(arr[word] % 2 === 0) {
+      sum += arr[word];
+    }
+  }
+  console.log(sum);
+}
+sumOfPositives([1,2,3,4,5,6,7]);
