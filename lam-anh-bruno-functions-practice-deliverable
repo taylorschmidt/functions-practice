@@ -1,0 +1,226 @@
+// // FUNCTIONS LAB // 
+// // Break a problem down into steps - Write a function that will return true if a word is a Palindrome, or will return false if not. 
+
+// function reverseString(str) {
+//     return str.split("").reverse().join("")
+// }
+
+// const palindrome = (input) => {
+//   let strInput = input.toString()
+//   let rvInput = reverseString(strInput)
+//     if (strInput === rvInput){
+//         return 'true'
+//     }
+//     return 'false'
+// };
+
+// palindrome('mom')
+
+
+// //from https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
+
+
+// // Small problems
+// // Write a function that takes two parameters (strings) and returns true (Boolean) if the two strings are identical, false if not.
+
+// const identical = (twin1, twin2) => {
+//   if (twin1 === twin2) {
+//     return 'true'
+//   }
+//   return 'false'
+// }
+
+// identical (900,900)
+
+// // Write a function that takes three parameters (numbers), sums them, converts the sum into a string and returns the string (eg. "123")
+// // Use your google-fu to research converting a number into a string
+
+// const bigSum = (num1,num2,num3) => {
+//   let sum = num1+num2+num3
+//   let strSum = sum.toString()
+//   console.log(strSum)
+//   return strSum
+// }
+
+// bigSum(4,5,6)
+
+// // Invoke the function a couple of times with different arguments each time
+
+// identical (900*900)
+// identical ('big','gib')
+
+// // Experiment
+// // What happens if you supply more arguments than there are parameters?
+
+
+// identical ('big','gib','lib')
+
+// // What happens if you supply fewer arguments than there are parameters?
+
+
+// identical ('big')
+
+// DELIVERABLE PART 1 //
+
+// 1. Calculate The Cube
+// Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
+const calculateCube = (num) => {
+  console.log(num*num*num)
+} 
+calculateCube(5) 
+
+// 2. Is It A Vowel?
+// Write a function isAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
+
+// const isAVowel = (letter) => {
+//   let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+//   for (var i = 0; i < vowels.length; i++){
+//     if(letter === vowels[i]) {
+//       return 'true'
+//   }
+//   return 'false'
+//   }
+// };
+// console.log(isAVowel('e')); // initial answer, before Bruno's help
+
+// after Bruno's help vvv
+
+let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+const isAVowel = (letter) => {
+if (vowels.indexOf(letter.toLowerCase()) !== -1) {
+    		return true;
+	}
+return false;
+}
+console.log(isAVowel('e'))
+
+// 3. Get Two Lengths
+// Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+
+const getTwoLengths = (first, second) => { 
+  let arr = [first.split('').length, second.split('').length]
+  return arr
+}
+console.log(getTwoLengths('mr', 'chameleon'))
+
+// sources: https://www.w3schools.com/jsref/jsref_length_string.asp + https://www.w3schools.com/jsref/jsref_split.asp
+  
+// 4. Get Multiple Lengths
+// Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+
+const getMultipleLengths = (Arr) => {
+	let myArr = []
+	for (let i = 0; i < Arr.length; i++) {
+		myArr.push(Arr[i].length)
+	}
+	return myArr
+}
+console.log(getMultipleLengths(['hello', 'what', 'is', 'up', 'dude']))
+
+// DELIVERABLE PART 2: Problem Solving w/ functions //
+
+// 1. Maximum of Three Numbers
+// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+
+const maxOfThree = (first, second, third) => {
+	let sortedArr = [first, second, third].sort((a,b) => {
+		return a-b
+	})
+	return sortedArr[sortedArr.length-1]  
+}
+
+console.log(maxOfThree(1, 1, 9))
+
+// source: https://www.w3schools.com/jsref/jsref_sort.asp 
+
+// Print Longest Word
+// 2. Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+const printLongestWord = (longBoi) => {
+	let myArr = []
+	longBoi.forEach((arr) => {
+    if (arr.length > myArr.length) {
+      myArr = arr
+    }
+  })
+	return myArr
+}
+
+console.log(printLongestWord(['BoJack', 'Princess', 'Diane', 'a', 'Max', 'Peanutbutter', 'big', 'blob', 'butterPeanut' ]));
+
+// 3. Transmogrify the Numbers 
+// Write a Javascript function called transmogrify. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+// For example, the transmogrified result of 5, 3, and 2 is (5 times 3) to the power of 2 is 225.
+
+const transmogrify = (first, second, third) => {
+  return Math.pow(first * second, third)
+}
+
+console.log(transmogrify(5, 3, 2))
+
+// source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow
+
+// 4. Project Euler problem #2
+// Write a function that takes a parameter, a number. The function should print the Fibonacci sequence up to that number.
+// Adjust the function to push the even numbered values into an array.
+// Adjust the function to return the summed value of the array.
+// Find the sum of the even numbered values that do not exceed four million.
+
+// ask Bruno for help!
+const fib = (n) => {   
+  let fibNum = [] // Fibonacci sequence up to number
+  let evNum = [] // even number
+	for(let i = 1; i <= n; i++) { // By starting with 1 and 2, the first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+		fibNum.push(fibNum.reduce((accumulator, currentVal) => {
+			return accumulator + currentVal;
+		}));
+		if (i % 2 === 0){
+ 			evNum.push(i)
+ 		}
+	}
+	let evNumSum = evNum.reduce((accumulator, currentVal) => { // sum of even numbers 
+		return accumulator + currentVal
+	})
+}
+console.log(fib(4))
+
+// ???????
+// source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+
+// 5. Can you find the needle in the haystack?
+// Write a function findNeedle() that takes an array full of junk but containing one "needle"
+// After your function finds the needle it should return a message (as a string) that says:
+// "found the needle at position " plus the index it found the needle, so:
+// findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+// should return "found the needle at position 5"
+
+const findNeedle = (needle) => {
+  return "found the needle at position " + needle.indexOf("needle");
+}
+
+findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+
+// 6. Sum the Positive
+// Given an array, return the sum of only the positive numbers
+// [1, -4, 7, 12] => 1 + 7 + 12 = 20
+
+const sumOfPos = (sumArr) => {   // ??? why doesn't it work?
+  let neg = []
+  let sum = 0
+  for(var i = 0; i < sumArr.length; i++) {
+    if(sumArr[i] < 0) {
+      neg.push(sumArr[i])
+    } else {
+      sum += sumArr[i]
+    }
+  }
+  console.log(neg)
+  return sum;
+}
+var sum_result = SumOfPos([1, -4, 7, 12])
+
+console.log(sum_result)
