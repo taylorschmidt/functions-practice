@@ -1,0 +1,107 @@
+//#1
+// function calcCube (a) {
+// return (a * a * a)
+// }
+// calcCube(5)
+
+// function isAVowel (vow) {
+//   if(vow === 'a','e','i','o','u'){
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+// isAVowel('c')
+// I COULD ONLY GET THIS ONE TO SAY TRUE. NOT SURE WHAT IM MISSING
+
+// function getTwoLenghts ('string1','string2') {
+// let arr = [string1.split(' '), string2(' ')]
+// }
+// getTwoLenghts('hank','hippo')
+//I tried a few different methods and could not get this to work
+
+//# 3 function getTwoLengths(str1, str2) {
+  //  let length = [];
+  //  length.push(str1.length)
+  //  length.push(str2.length)
+  //  return length
+  // }
+  // console.log(getTwoLengths("hi", "hello"))
+
+  // #4  function getMultipleLengths(arr) {
+  //   let newArray = [];
+  //   for (let i = 0; i < arr.length; i++) {
+  //     newArray.push(arr[i].length) 
+  //   }
+  //   return newArray
+  // }
+  // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
+
+  // PART 2 #1 
+  // function maxOfThree(n1,n2,n3){
+  //   const nums = [n1,n2,n3];
+  //   var max = nums[0];
+  //   for(var i = 1; i < nums.length; i++){
+  //     if (max < nums[i]){
+  //       max = nums[i];
+  //     }
+  //   }
+  //   return max;
+  // } ***I had to google this on, id like to go over this again hopefully in office hours. ***
+
+  //#2
+  // function printLongestWord(arr) {
+  //  let longestWord = arr[0]
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i].length > longestWord.length) {
+  //       longestWord = arr[i]
+  //     }
+  //   }
+  //   return longestWord
+  // }
+  // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]))
+//*** using arrays is still new to me, i couldnt get the correct return on this ***
+  
+  // #3
+  // function transmogrify(num1, num2, num3) {
+  //   return Math.pow((num1*num2), num3)
+  // }
+  // console.log(transmogrify(5, 3, 2));
+
+  //#4 *****This made 0 sense to me, also thank you google but I was unsuccessful with this***
+  // function fibonacci(num) {
+  //     let array = [1, 2]
+  //     let even = [2]
+  //     while (num >= array[array.length-1] + array[array.length-2]){
+  //         array.push(array[array.length-1] + array[array.length-2])
+  //         if(array[array.length - 1] % 2 === 0 && array[array.length - 1] < 4000000) {
+  //          
+  //         }
+  //     } 
+  //  
+  // }
+  // console.log(fibonacci(120))
+
+  //#5
+
+//   function findTheNeedle(wordList){
+//     for(var i = 0; i < wordList.length; i++){
+//         if (wordList[i] === "needle"){
+//             return "found the needle at postition " + i;
+//         }
+//     }
+// }
+
+// // console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
+
+//#6
+// function sumAdd(arr) {
+//       if (current>0) {
+//         return addition + current;
+//       } else {
+//         return addition;
+//       }
+//     }, 0)
+//   }
+//  console.log(sumAdd([1, -4, 7, 12])) 
+
